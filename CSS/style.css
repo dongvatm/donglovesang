@@ -1,0 +1,335 @@
+.flex {
+	display: flex;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+html {
+	font-size: 10px;	
+	height: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    	font-size: 14px;
+    	font-family: "Roboto", Arial, Helvetica, "Lato", 'Open Sans', sans-serif;
+    	line-height: 1.42857143;
+    	color: #3e3e3e;
+    	background-color: #5a5454;
+    	margin: 0;
+    	padding: 0;
+    	position: relative;
+    	top: 5px;
+}
+
+#audio {
+  display: none;
+}
+
+div#ah-wrapper {
+		display: block;
+    	width: 100%;
+    	max-width: 1100px;
+    	min-height: 800px;
+    	margin: 0 auto;
+    	position: relative;
+    	box-sizing: border-box;
+    	background: #3e3e3e;
+    	box-shadow: 0 0 3px 3px #000000;
+}
+
+div#ah-wrapper:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.ah-menu-top {
+    	border: 0;
+    	color: #ccc !important;
+}
+
+div#ah-cat {
+    	position: relative;
+}
+
+.ah-menu {
+    	background: #212121;
+    /* box-shadow: 0px 0px 1px 1px #734141; */
+}
+
+div#ah-cat ul {
+    	list-style: none;
+    	padding: 0;
+    	margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+div#ah-cat ul li {
+    	transition: 0.5s;
+    	line-height: 28px;
+    	padding: 9px 6px;
+    	position: relative;
+}
+
+
+.ah-float-left {
+    	float: left;
+}
+
+div#ah-cat ul li a {
+    	color: #ccc !important;
+    	font-size: 14px;
+    	padding: 8px;
+    /* box-shadow: 0 5px 5px #000; */
+}
+
+#ah-cat .ah-text-logo .ah-tls {
+    	color: #e6e6e6 !important;
+    	background: #b13f3f;
+    	padding: 0 5px;
+    	margin-left: 4px;
+    	text-shadow: 1px 1px 0px #000000;
+    	border-radius: 4px;
+    	box-shadow: 0 0 1px 1px #ff9696;
+}
+
+
+#ah-cat .ah-text-logo a {
+    	font-size: 18px !important;
+    	font-family: "Pridi", serif !important;
+    	vertical-align: middle;
+}
+
+.ah-float-right {
+    float: right !important;
+    text-align: center;
+}
+
+
+.ah-clear-both:after {
+    	content: "";
+    	display: block;
+    	clear: both;
+}
+
+#ah-cat .non-routed {
+    font-size: 13.4px !important;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc !important;
+}
+
+.ah-ulsm li {
+    float: left;
+    padding: 5px 3px !important;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #4a4a4a !important;
+}
+
+/*kích hoạt nút sổ javascript*/
+div#ah-cat ul li.active + .ah-ulsm {
+    display: block;
+}
+li.ah-lsm + .ah-ulsm {
+    width: 100%;
+    border-left: 0 !important;
+    z-index: 2;
+    background: #2b2b2b;
+    display: none;
+}
+
+/* Chia đôi danh mục nút sổ */
+.ah-drop-ft + ul li {
+    background: #151515 !important;
+    width: 50% !important;
+    box-sizing: border-box;
+}
+
+#ah-cat .ah-rtnav {
+    font-size: 12px;
+    color: #ccc !important;
+    position: absolute;
+    right: 10px;
+    bottom: 13px;
+}
+
+.fa-chevron-down:before {
+    content: "\f078";
+}
+
+.ah-mn2 {
+    text-align: center;
+    background: #1d1d1d;
+    margin-top: 8px;
+    box-shadow: 0px 0px 1px 1px #5f5f5f;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.menu-child .ah-search {
+    width: 240px;
+    line-height: 7px;
+    background-color: #2d2d2d;
+    background-image: none;
+    color: #844343;
+    border-radius: 0;
+    font-size: inherit;
+    border-right-width: 0px;
+    padding: 0 30px 0 10px;
+    border-right: 1px solid #444444;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.menu-child .ah-search:after {
+    content: "\f002";
+    position: absolute;
+    right: 9px;
+    top: 15px;
+    color: #636363;
+    font-size: 18px;
+}
+
+.menu-child .ah-search form input {
+    background: none;
+    border: 0;
+    outline: none;
+    order: 2;
+    padding: 0;
+    display: block;
+    width: 100%;
+    min-width: 0;
+    line-height: 27px;
+    font-size: 12px;
+    height: 37px;
+    color: #fff;
+    font-family: "Pridi", serif;
+    /* border-right: 1px solid #ccc; */
+}
+
+input, select, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0 !important;
+}
+
+.ah-button-login, .ah-button-search, .ah-button-fbox, .ah-button-setting, .ah-button-logout, .ah-button-history {
+    padding: 3px 0;
+    display: inline-block;
+    position: relative;
+    border-left: 1px solid #444444;
+    background: #2d2d2d;
+}
+
+.ah-button-login a, .ah-button-search a, .ah-button-fbox a, .ah-button-setting a, .ah-button-logout a, .ah-button-history a {
+    padding: 7px 13px;
+    color: #bdbdbd !important;
+    font-size: 12px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px)
+.menu-child .ah-search {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+div#ah-container {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.ah-pif-head {
+    position: relative;
+}
+
+.ah-pif-fname {
+    position: relative;
+    margin-bottom: 3px;
+    color: #dacb46 !important;
+    font-size: 18px;
+    padding: 1px 0;
+    background: #2b2b2b;
+    border-top: 2px solid #853b3b;
+}
+
+.ah-pif-fname h1 {
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.ah-pif-fname h1 a {
+    color: #d0d0d0 !important;
+    font-size: 17px;
+    line-height: 39px;
+    font-family: "Pridi", serif;
+}
+
+/* Tạo hai cột không bằng nhau, float cạnh nhau */
+	     /* Cột trái */
+		  .leftcolumn { 
+  			float: left;
+  			width: 73%;
+			 }
+
+	     /* Cột phải */
+		  .rightcolumn {
+  			float: left;
+  			width: 25%;
+  			padding-left: 15px;
+			}
+
+	     /* Hình ảnh tượng trưng */
+		  .fakeimg {
+  			background-color: #ffffff;
+  			width: 100%;
+  			padding: auto;
+			}
+
+	     /* Thêm định dạng thẻ cho bài viết */
+		  .card {
+  			background-color: #ffffff;
+  			padding: 20px;
+  			margin-top: 20px;
+		  }
+
+	     /* Clear float khác sau các cột */
+		  .row:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		  }
+
+  /* Bố cục linh hoạt: các cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình 
+      có chiều rộng dưới 700px */
+      @media screen and (max-width: 600px) {
+        .leftcolumn, .rightcolumn { 
+          width: 100%;
+          padding: 0;
+        }
+      }
