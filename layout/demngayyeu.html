@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+ <html lang="vi">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Đếm ngày yêu em ❤</title>
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" type="text/css" href="CSS-layout/bodem.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="js-layout/bodem.js"></script>
+ </head>
+ <body>
+
+    <button class="button-1" type="button" onclick="quay_lai_trang_truoc()">Home</button>
+
+    <script>
+      function quay_lai_trang_truoc(){
+          history.back();
+      }
+      /* Demo purposes only */
+        $(".hover").mouseleave(
+            function() {
+            $(this).removeClass("hover");
+            }
+        );
+    </script>
+
+     <div class="container">
+         <h2><span>Mãi bên nhau bạn nhớ ❤❤❤</span> ĐẾM NGÀY YÊU EM </h2>
+          <div class="countdown">
+         <div id="day"></div>
+         <div id="hour"></div>
+         <div id="minute"></div>
+         <div id="second"></div>
+     </div>
+ </div>
+ </body>
+ </html>
