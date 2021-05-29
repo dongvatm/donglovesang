@@ -1,0 +1,90 @@
+
+form.formpa div input[type="submit"]:hover {
+    cursor: pointer;
+    background: #186cb3;
+}
+.top_lr {
+    background: #555f6b;
+    color: #fff;
+    padding: 14px;
+    font-size: 14px;
+}
+.top_lr span a.active {
+    background: #212121;
+}
+.top_lr span a {
+    background: #767879;
+    padding: 16px;
+    color: #ececec;
+}
+.top_lr span a:hover {
+    border-top: 2px solid #fff;
+}
+b.remember_log {
+    background: #000;
+    padding: 7px 10px;
+    border: 1px solid #8a8a8a;
+    color: rgb(253, 131, 131);
+}
+.remember_log input[type="checkbox"] {
+    vertical-align: middle;
+    margin: 0;
+    margin-top: -2px;
+}
+.alert_member {
+    background: #a53232;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.formpa span input {
+    background: #633b3b;
+    border: 1px solid #985f5f;
+    padding: 10px 15px;
+    width: 70%;
+    color:#fff;
+}
+.formpa span:last-child {
+    width: 70%;
+    float: left;
+}
+.formpa span:first-child {
+    width: 29%;
+    float: left;
+    text-align: right;
+    padding-right: 18px;
+    box-sizing: border-box;
+}
+form.formpa div {
+    line-height: 72px;
+}
+form.formpa {
+    background: #2d2d2d;
+    color: #fff;
+
+}
+
+}
+form.formpa input:focus
+{
+	box-shadow: 0 0 2px 2px #652b2b;
+	outline: 0;
+	transition: all linear 0.3s;
+}
+form.formpa div:nth-child(odd) {
+    background: #212121!important;
+}
+form.formpa div:after
+{
+	clear:both;
+	display:block;
+	content:"";
+}
+form.formpa div input[type="submit"] {
+    padding: 7px 10px;
+    border: 1px solid #9cc8ec;
+    background: #5893c5;
+    color: #fff;
+    padding-top: 8px;
+}
