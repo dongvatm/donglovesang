@@ -1,6 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:500);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
+html {
+    font-size: 10px;    
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 *{
      margin: 0;
      padding: 0;
@@ -11,14 +17,16 @@ body{
      background: #FF6666;
      background-attachment: fixed;
      background-blend-mode: hard-light;
+     position: center;
+
  }
 
 .container{
      position: absolute;
-     top: 73px;
-     left: 200px;
-     right: 200px;
-     bottom: 75px;
+     top: 0px;
+     left: 0px;
+     right: 0px;
+     bottom: 0px;
      background: url(https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-red-love-balloon-thanksgiving-background-material-backgroundthanksgivingthanksgiving-boardadvertising-backgroundthanksgiving-image_70510.jpg);
      background-attachment: fixed;
      background-repeat: no-repeat;
@@ -27,6 +35,9 @@ body{
      justify-content: center;
      align-items: center;
      flex-direction: column;
+     border-radius:30%;
+    -moz-border-radius:10%;
+    -webkit-border-radius:10%;
      box-shadow: 0 1px 1px rgba(0,0,0,0.12),
      0 2px 2px rgba(0,0,0,0.12),
       0 4px 4px rgba(0,0,0,0.12),
@@ -36,15 +47,15 @@ body{
 
  .container h2{
      text-align: center;
-     font-size: 80px;
+     font-size: 40px;
      line-height: 0.7em;
      color: #fff;
-     margin-top: -80px;
+     margin-top: -40px;
  }
  .container h2 span{
      display: block;
      letter-spacing: 6px;
-     font-size: 0.3em;
+     font-size: 0.5em;
      margin-bottom: 20px;
  }
 .countdown{
